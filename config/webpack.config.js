@@ -49,7 +49,7 @@ module.exports = {
       {
         test: /\.less$/,
         use: DEBUG
-          ? ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+          ? ['style-loader', 'css-loader', 'less-loader']
           : ExtractTextPlugin.extract({
               fallback: 'style-loader',
               use: ['css-loader', 'postcss-loader', 'less-loader']

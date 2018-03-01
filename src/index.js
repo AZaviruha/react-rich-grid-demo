@@ -5,7 +5,7 @@ import { AppContainer } from 'react-hot-loader';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '@main/app';
+import App from '@main';
 
 // ReactDOM.render(<App />, document.querySelector('#root'));
 
@@ -21,9 +21,9 @@ const render = Component => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept('@main/app', () => {
+  module.hot.accept('@main', () => {
     ReactDOM.unmountComponentAtNode(document.getElementById('root'));
-    const NextRootContainer = require('@main/app').default;
+    const NextRootContainer = require('@main').default;
     render(NextRootContainer);
   });
 }

@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "access-levels": "^1.0.2",
+    "antd": "^3.2.2",
     "classnames": "^2.2.5",
     "history": "^4.7.2",
     "html-webpack-plugin": "^2.30.1",
